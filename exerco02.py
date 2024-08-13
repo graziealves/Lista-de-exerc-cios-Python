@@ -1,2 +1,2 @@
 nome = input("Digite o seu nome: ")
-print(f"Seja-bem vindo p{nome}")  
+print("Seja-bem vindo p{nome}")  

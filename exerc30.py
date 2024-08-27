@@ -8,13 +8,16 @@ for i in range(0,2):
 operador = (input(f"\33[1;35;40mDigite o operador desejado:\33[m"))
     
 if (operador == "+"):
-    resultado = numeros [0]+ numeros [1] 
+    resultado = numeros[0]+ numeros[1] 
 elif(operador == "-"):
-    resultado = numeros [0]- numeros [1]
+    resultado = numeros[0]- numeros[1]
 elif(operador == "*"):
-    resultado = numeros[0] * numeros [1]
-elif(operador == "/"):
-    resultado = numeros [0] / numeros [1]
+    resultado = numeros[0] * numeros[1]
+elif(operador == "/" and numeros[1]!=0):
+    resultado = numeros[0] / numeros[1]
+elif(operador == "/" and numeros[1]==0):
+    print("Informe um divisor diferente de zero.")
 else:
-    print("Operador desconhecido!")
+    print("\33[1;31;40mOperador desconhecido!\33[m")
+    
 print("\33[1;35;40mO resultado é : \33[m",resultado)

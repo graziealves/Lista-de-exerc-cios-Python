@@ -7,7 +7,7 @@ idanos = ano - idade
 idme = idanos * 12
 iddia = idanos * 365
 idse = idanos * 52
-id = 2019 - idanos
+id = 2019 - idade
 
 print("\33[1;35;40mA sua idade em anos é: \33[m", idanos)
 print("\33[1;35;40mA sua idade em meses é: \33[m", idme)

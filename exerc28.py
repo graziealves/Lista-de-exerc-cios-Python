@@ -8,3 +8,4 @@ for i in range(0,3):
 numeros.sort()
 
 print("\33[1;35;40mO maior número é:\33[m",numeros[-1])
+

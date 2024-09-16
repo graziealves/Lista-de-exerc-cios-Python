@@ -1,9 +1,11 @@
-print("\33[1;35;40mFatorial de um número!! \33[m")
+print("\33[1;35;40mFatorial de um número!\33[m\n")
+
+n = int(input("Informe um número: "))
 
 fatorial = 1
-numero = int(input("\33[1;35;40mInforme um número: \33[m"))
+i = 0
 
-for i in range(i = numero;i>1; i--):
-fatorial = fatorial - 1
+for i in range(n,1,-1):
+    fatorial = fatorial * i
 
-print (fatorial)
+print ("O fatorial do seu número é: ", fatorial)

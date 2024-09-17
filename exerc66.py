@@ -1,12 +1,18 @@
-print("\33[1;35;40mMédia disciplinar!\33[m\n")
+nomes = []
+notas = []
 
-nome = [4]
-notas = [4][5]
+boletim = []
 
-for i in range (0,4):
-    nome[i] = input(f"Informe o nome do (a) {i+1}º aluno (a): ")
-    for j in range (0,5): 
-        notas[i][j] = float(input(f"Informe a nota do {j+1}º bimestre: "))
+for i in range(0, 4):
+  nome = input(f"Informe o nome do {i+1}º aluno: ")
+  nomes.append(nome)
+  notas = []
+  for n in range(0, 4):
+    notas.append(float(input(f"Informe a nota do {n+1}º bimestre do aluno(a) {nome}: ")))
+  notas.insert(0, nome)
+  boletim.append(notas)
 
-for i in range (0,4):
-    notas [i][]
+for a in range (0,4):
+  boletim[nomes[a]][]
+
+print(boletim)

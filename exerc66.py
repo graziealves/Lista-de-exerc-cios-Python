@@ -13,6 +13,7 @@ for i in range(0, 4):
   boletim.append(notas)
 
 for a in range (0,4):
-  boletim[nomes[a]][]
+  boletim[nomes[a]][
+  
 
 print(boletim)
